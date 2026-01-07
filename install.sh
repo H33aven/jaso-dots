@@ -16,7 +16,7 @@ cp -f cfgs/hypr/hyprland/general.conf ~/.config/hypr/hyprland/ && echo -e "${GRE
 cp -f cfgs/hypr/hyprland/keybinds.conf ~/.config/hypr/hyprland/ && echo -e "${GREEN}[+] keybinds.conf deployed${NC}" || echo -e "${RED}[-] Failed to deploy keybinds.conf${NC}"
 cp -f cfgs/illogical-impulse/config.json ~/.config/illogical-impulse/ && echo -e "${GREEN}[+] config.json deployed${NC}" || echo -e "${RED}[-] Failed to deploy config.json${NC}"
 cp -f cfgs/neofetch/config.conf ~/.config/neofetch/ && echo -e "${GREEN}[+] config.conf deployed${NC}" || echo -e "${RED}[-] Failed to deploy config.conf${NC}"
-cp -f themes ~/.config/vesktop && echo -e "${GREEN}[+] config.conf deployed${NC}" || echo -e "${RED}[-] Failed to deploy config.conf${NC}"
+cp -r themes ~/.config/vesktop && echo -e "${GREEN}[+] config.conf deployed${NC}" || echo -e "${RED}[-] Failed to deploy config.conf${NC}"
 
 hyprctl reload && echo -e "${GREEN}[+] Hyprland reloaded${NC}" || echo -e "${RED}[-] Failed to reload Hyprland${NC}"
 echo -e "${GREEN}[+]${NC} Deployment complete. System configured."
